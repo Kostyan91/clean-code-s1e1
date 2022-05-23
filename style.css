@@ -1,5 +1,11 @@
 /* Basic Style */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body {
     background-color: #f8f8f8;
     color: #333;
@@ -50,18 +56,13 @@
 }
 
 
-.task-row-wrapper {
+.main__row-wrapper {
     display: flex;
 }
 
 
-ul {
-    margin: 0;
-    padding: 0px;
-}
 
-
-li, h3 {
+li {
     list-style: none;
 }
 
@@ -88,7 +89,7 @@ input,button{
 
 
 /* Heading */
-.head-text {
+.main__h3 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -113,19 +114,19 @@ input[type="text"] {
 }
 
 
-input[type="text"]:focus {
+.task[type="text"]:focus {
     color: #333;
 }
 
 
 /* New Task */
-label[for='new-task'] {
+.main__label[for='main__new-task'] {
     display: block;
     margin: 0 0 20px;
 }
 
 
-input#new-task {
+#main__new-task {
     width: 318px;
 }
 
@@ -177,13 +178,13 @@ input#new-task {
 
 
 /* Completed */
-#completed-tasks .task__name {
+.main__completed .task__name {
     text-decoration: line-through;
     color: #888;
   }
   
   /* Edit Task */
-  .todo__line .task__input {
+  .main__line .task__input {
     display: none;
   }
   

@@ -20,16 +20,17 @@
 
     <main class="main">
         <section class="main__add">
-            <label class="head-text" for="new-task">Add Item</label>
-            <div class="task-row-wrapper">
-                <input id='new-task' class="task" type="text">
+            <h3 class="main__h3">add Item</h3>
+            <label class="main__label" for="main__new-task"></label>
+            <div class="main__row-wrapper">
+                <input id='main__new-task' class="task" type="text">
                 <button class="button">Add</button>
             </div>
         </section>
 
         <section class="main__todo">
-            <h3 class="head-text">todo</h3>
-            <ul id='main__incomplete-tasks'>
+            <h3 class="main__h3">todo</h3>
+            <ul id="main__incomplete-tasks">
                 <li class="main__line">
                     <input type='checkbox' class="checkbox">
                     <label class="task task__name">Pay Bills</label>
@@ -52,13 +53,20 @@
                 </li>
             </ul>
         </section>
-        <h3 class="head-text">Completed</h3>
-        <ul id="completed-tasks">
-            <li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text"
-                    class="task"><button class="button">Edit</button><button class="button"><img src="./remove.svg"
-                        alt="remove"></button>
+        <section class="main__completed-tasks">
+        <h3 class="main__h3">completed</h3>
+        <ul class="completed-tasks">
+            <li>
+                <input type="checkbox" checked>
+                <label class="task task__name">See the Doctor</label>
+                <input type="text"class="task task__input">
+                    <button class="button button_edit">Edit</button>
+                    <button class="button button_delete">
+                        <img src="./remove.svg" alt="remove">
+                    </button>
             </li>
         </ul>
+    </section>
     </main>
     <script type="text/javascript" src="app.js"></script>
 </body>
