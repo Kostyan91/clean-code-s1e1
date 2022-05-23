@@ -7,7 +7,7 @@
 }
 
 
-.aaa {
+.head {
     width: 500px;
     margin: 0 auto;
     display: block;
@@ -15,12 +15,12 @@
 }
 
 
-.aaa img {
+.head__img {
     width: 100%;
 }
 
 
-.aaa .more_inf {
+.head__more-inf {
     font-family: fantasy, cursive;
 }
 
