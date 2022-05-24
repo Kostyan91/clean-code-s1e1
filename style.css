@@ -61,7 +61,6 @@
 }
 
 
-
 li {
     list-style: none;
 }
@@ -104,7 +103,7 @@ input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
-    height: 21px;
+    height: 25px;
     padding: 0 9px;
     border: 1px solid #dDd;
     background: #FFF;
@@ -147,17 +146,26 @@ input[type="text"] {
 }
 
 
-.main__line > .checkbox {
+.main__line > label {
+    padding-left: 10px;
+    font-size: 18px;
+    width: 226px;
+}
+
+.main__line input[type="checkbox"] {
     margin: 0 10px;
 }
 
+.main__line input[type="text"] {
+   display: none;
+}
 
-.task__name {
+/* .task__name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
-}
+} */
 
 
 .todo__line .task__input {
@@ -184,15 +192,17 @@ input[type="text"] {
   }
   
   /* Edit Task */
-  .main__line .task__input {
+  /* .main__line .task__input,
+  .main__completed-tasks .task__input{
     display: none;
-  }
+  } */
+
   
-  .main__line.todo__line_edit-mode .task__input {
+  .main__line.edit-mode input[type = "text"] {
     display: inline-block;
     width: 224px;
   }
   
-  .main__line.todo__line_edit-mode .task__name {
+  .main__line.edit-mode label  {
     display: none;
   }
