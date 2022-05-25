@@ -141,9 +141,8 @@ var ajaxRequest = function () {
 }
 
 //Set the click handler to the addTask function.
-addButton.addEventListener("click", () => {
-    addTask()
-});
+
+addButton.addEventListener("click", addTask);
 
 addButton.addEventListener("click",ajaxRequest);
 
