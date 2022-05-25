@@ -83,12 +83,12 @@ var editTask = function () {
     var editBtn = listItem.querySelector(".button_edit");
     var containsClass = listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
-    if(containsClass){
+    if (containsClass) {
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
-    }else{
+    } else {
         editInput.value = label.innerText;
         editBtn.innerText = "Save";
     }
@@ -129,7 +129,7 @@ var taskIncomplete = function () {
     var listItem = this.parentNode;
     console.log(this)
     incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem,taskCompleted);
+    bindTaskEvents(listItem, taskCompleted);
 }
 
 
@@ -143,7 +143,7 @@ addButton.addEventListener("click", addTask);
 addButton.addEventListener("click",ajaxRequest);
 
 
-var bindTaskEvents = function (taskListItem,checkBoxEventHandler){
+var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     console.log("bind list item events");
 //select ListItems children
     var checkBox = taskListItem.querySelector("input[type=checkbox]");
@@ -162,13 +162,13 @@ var bindTaskEvents = function (taskListItem,checkBoxEventHandler){
 //cycle over incompleteTaskHolder ul list items
 //for each list item
 
-for (var i = 0; i < incompleteTaskHolder.children.length; i++){
+for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
     //bind events to list items chldren(tasksCompleted)
-    bindTaskEvents(incompleteTaskHolder.children[ i ],taskCompleted);
+    bindTaskEvents(incompleteTaskHolder.children[ i ], taskCompleted);
 }
 
 //cycle over completedTasksHolder ul list items
-for (var i = 0; i < completedTasksHolder.children.length;i++){
+for (var i = 0; i < completedTasksHolder.children.length; i++) {
     //bind events to list items chldren(tasksIncompleted)
-    bindTaskEvents(completedTasksHolder.children[ i ],taskIncomplete);
+    bindTaskEvents(completedTasksHolder.children[ i ], taskIncomplete);
 }
