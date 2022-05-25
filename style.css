@@ -117,7 +117,7 @@ input[type="text"] {
 
 
 /* New Task */
-.main__label[for='main__new-task'] {
+.main__label[for="main__new-task"] {
     display: block;
     margin: 0 0 20px;
 }
