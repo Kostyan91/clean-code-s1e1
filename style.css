@@ -46,6 +46,7 @@
     margin: 0 auto 0;
 }
 
+
 .main__add{
     margin-top: 20px;
 }
@@ -58,7 +59,7 @@
 }
 
 
-.main__row-wrapper {
+.main__row {
     display: flex;
 }
 
@@ -157,13 +158,6 @@ input[type="text"] {
    display: none;
 }
 
-/* .task__name {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
-} */
-
 
 .todo__line .task__input {
     width: 226px;
@@ -188,12 +182,6 @@ input[type="text"] {
     color: #888;
   }
   
-  /* Edit Task */
-  /* .main__line .task__input,
-  .main__completed-tasks .task__input{
-    display: none;
-  } */
-
   
   .main__line.edit-mode input[type = "text"] {
     display: inline-block;

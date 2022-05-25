@@ -68,7 +68,6 @@ var addTask = function () {
     bindTaskEvents(listItem, taskCompleted);
 
     taskInput.value = "";
-
 }
 
 //Edit an existing task.
@@ -88,7 +87,6 @@ var editTask = function () {
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText = editInput.value;
-        console.log(editInput.value)
         editBtn.innerText = "Edit";
     }else{
         editInput.value = label.innerText;
@@ -120,7 +118,6 @@ var taskCompleted = function () {
     var listItem = this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
@@ -164,8 +161,8 @@ var bindTaskEvents = function (taskListItem,checkBoxEventHandler){
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (var i = 0; i < incompleteTaskHolder.children.length; i++){
 
+for (var i = 0; i < incompleteTaskHolder.children.length; i++){
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[ i ],taskCompleted);
 }
